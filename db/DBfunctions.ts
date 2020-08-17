@@ -32,11 +32,11 @@ const pgUpdateData = async (data: any, block: number) => {
             if (transactionFrom !== null) {
                 let queryFrom = makeInsertSql(transactionFrom, -value, block)
 
-
                 await clientPool.query(queryFrom)
             } else {
                 console.log("bad information about from address", block)
             }
+
             if (transactionTo !== null) {
                 let queryTo = makeInsertSql(transactionTo, value, block)
 
@@ -81,7 +81,6 @@ export const findMaxValue = async () => {
         return max
     } catch (error) {
         console.log(error)
-
     }
 }
 
