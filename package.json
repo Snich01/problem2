@@ -1,0 +1,13 @@
+{
+  "name": "problem2",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Snich",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "pg": "^8.3.0",
+    "postgres-migrations": "^5.0.0"
+  }
+}

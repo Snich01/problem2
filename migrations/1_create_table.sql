@@ -1,0 +1,1 @@
+CREATE TABLE users (user_code varchar(255) UNIQUE NOT NULL, eth_change decimal NOT NULL, last_update bigint NOT NULL);
